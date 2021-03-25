@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DTS Project G12</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  
+  <!----------------- Body -------------->             
+  <body>
+	<!-------------------------------AnnouncementBar------------------------>
+	<div class="AnnouncementBar">
+		<p>FREE SHIPPING ALL OVER INDONESIA WITH MINIMUM PURCHASE 500K</p>
+	</div>
+	<!---------------------------------------------------------------------->
+	
+	<!------------------------------HeaderMenu------------------------------>
+	<div class="HeaderMenu">
+		<ul class="HorizontalMenu">
+			<li>Home</li>
+			<li>Product1</li>
+			<li>Product2</li>
+			<li>Product3</li>
+		</ul>
+	</div>
+	
+	
+	<!-----------------------------slideshow-container---------------------->
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		   <img src="img/img1.png">
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="img/img2.png">
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="img/img3.png">
+		</div>
+
+	</div>
+		
+	<!-------------------------script slideshow-container----------------->
+	<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	  }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}    
+	  x[myIndex-1].style.display = "block";  
+	  setTimeout(carousel, 3000); // Change image every  seconds
+	}
+	</script>
+
+	<!---------------------------------------------------------------------->
+	
+	<!--------------3 div class untuk produk dibawah ini------------------->
+	<div >
+	
+	</div>
+	
+	<div >
+	
+	</div>
+	
+	<div >
+	
+	</div>
+	
+	<!---------------------------------------------------------------------->
+	
+  </body>
+  
+  <footer>
+  </footer>
+ </html>

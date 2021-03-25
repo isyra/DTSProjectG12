@@ -1,0 +1,63 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {box-sizing: border-box}
+
+.AnnouncementBar{
+	background:#bf9578;
+	height : 50px;
+	width:100%;
+}
+
+.AnnouncementBar p{
+text-align : center;
+padding:19px 0px;
+font-size:12px;
+color:#f8f0f0;
+letter-spacing:2px;
+}
+
+.HeaderMenu{
+height:125px;
+background:white;
+opacity: 0.0;
+z-index:10;
+transition: all 0.5s;
+}
+
+.HeaderMenu:hover{
+opacity: 1.0;
+z-index:10;
+}
+
+
+.slideshow-container{
+margin-top:-125px;
+
+}
+
+img {
+width:100%;
+z-index:-1;
+position:absolute;
+}
+
+
+
+
