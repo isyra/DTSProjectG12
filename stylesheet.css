@@ -1,28 +1,20 @@
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p, div {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Lucida Grande";
+* {
+  box-sizing: border-box;
 }
 
 li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+  width:100%;
 }
-
-* {box-sizing: border-box}
 
 .AnnouncementBar{
 	background:#bf9578;
 	height : 50px;
-	width:100%;
 }
 
 .AnnouncementBar p{
@@ -46,18 +38,12 @@ opacity: 1.0;
 z-index:10;
 }
 
-
 .slideshow-container{
 margin-top:-125px;
-
 }
 
-img {
-width:100%;
+.mySlides img {
 z-index:-1;
 position:absolute;
+width: 100%;
 }
-
-
-
-
