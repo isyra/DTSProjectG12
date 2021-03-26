@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+html,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
@@ -12,9 +19,12 @@ body {
   width:100%;
 }
 
+
 .AnnouncementBar{
 	background:#bf9578;
 	height : 50px;
+	
+	
 }
 
 .AnnouncementBar p{
@@ -25,25 +35,45 @@ color:#f8f0f0;
 letter-spacing:2px;
 }
 
-.HeaderMenu{
+.Header{
 height:125px;
 background:white;
 opacity: 0.0;
-z-index:10;
 transition: all 0.5s;
+
 }
 
-.HeaderMenu:hover{
+.Header:hover{
 opacity: 1.0;
-z-index:10;
+}
+
+.HorizontalMenu li{
+display:inline;
+
+}
+
+.border {
+border-bottom:0.5px solid white;
 }
 
 .slideshow-container{
 margin-top:-125px;
+
 }
+
 
 .mySlides img {
 z-index:-1;
 position:absolute;
 width: 100%;
+height:auto;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity:1.0;
+}
+
+
