@@ -18,8 +18,8 @@
 	</div>
 	<!---------------------------------------------------------------------->
 	
-	<!------------------------------HeaderMenu------------------------------>
-	<div class="HeaderMenu">
+	<!------------------------------Header------------------------------>
+	<div class="Header" id="myHeader">
 		<ul class="HorizontalMenu">
 			<li>Home</li>
 			<li>Product1</li>
@@ -27,8 +27,23 @@
 			<li>Product3</li>
 		</ul>
 	</div>
-	
-	
+	<!---------------------------------------------------------------------->
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		  } else {
+			header.classList.remove("sticky");
+		  }
+		}
+	</script>
+	<!---------------------------------------------------------------------->
+	<div class="border"> </div>
 	<!-----------------------------slideshow-container---------------------->
 	<div class="slideshow-container">
 
