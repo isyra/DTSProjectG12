@@ -19,6 +19,7 @@ body {
   width:100%;
 }
 
+/*------------------------------Mohamad Isyra R-----------------*/
 
 .AnnouncementBar{
 	background:#bf9578;
@@ -45,11 +46,18 @@ transition: all 0.5s;
 
 .Header:hover{
 opacity: 1.0;
+transition: all 0.5s;
 }
 
 .HorizontalMenu li{
-display:inline;
+display:inline-block;
+padding:20px 20px;
+}
 
+.HorizontalMenu li:hover{
+border-bottom:0.5px solid #111;
+transition: all 0.5s;
+cursor: pointer;
 }
 
 .border {
@@ -76,4 +84,28 @@ height:auto;
   opacity:1.0;
 }
 
+ /* ---------------------css contoh content ------------------------ */
+.contents{
+  margin-top:700px;
+  height:500px;
+}
 
+.section-title {
+  font-size:28px;
+  border-bottom:2px solid #dee7ec;
+  padding-bottom:15px;
+  margin-bottom:50px;
+}
+
+.contents-item p {
+  font-size:24px;
+  margin-top:30px;
+}
+
+.contents-item{
+  float:left;
+ margin-right: 40px;
+}
+  /*batas css content */
+  
+/*------------------------------Mohamad Isyra R-----------------*/
