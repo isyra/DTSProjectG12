@@ -1,8 +1,8 @@
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
-  img {
+  .lesson {
     width: 50%;
-    
+    margin-bottom: 50px;
   }
   
   
@@ -11,11 +11,30 @@
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
   
-  img {
-    width: 50%;
-    
+  .lesson {
+    width: 100%;
   }
   
-  
+  .img1{
+	content:url("img/img1mobile.png");
+	width:100%;
+	z-index:-1;
+	position:absolute;
 }
+  
+  .img2{
+	content:url("img/img2mobile.png");
+	width:100%;
+	z-index:-1;
+	position:absolute;
+}
+ 
+.img3{
+	content:url("img/img3mobile.png");
+	width:100%;
+	z-index:-1;
+	position:absolute;
+} 
+  
+  
 }
