@@ -16,7 +16,7 @@ li {
 body {
   margin: 0;
   font-family: "Lucida Grande";
-  width:100%;
+  
 }
 
 /*------------------------------Mohamad Isyra R-----------------*/
@@ -38,20 +38,23 @@ letter-spacing:2px;
 
 .Header{
 height:125px;
-background:white;
-opacity: 0.0;
+background:transparent;
 transition: all 0.5s;
-
+border-bottom:0.1px solid #dee7ec;
+color:white;
 }
 
 .Header:hover{
-opacity: 1.0;
 transition: all 0.5s;
+background:white;
+color:black;
 }
 
 .HorizontalMenu li{
 display:inline-block;
 padding:20px 20px;
+opacity:0.8;
+letter-spacing:2px;
 }
 
 .HorizontalMenu li:hover{
@@ -60,52 +63,69 @@ transition: all 0.5s;
 cursor: pointer;
 }
 
-.border {
-border-bottom:0.5px solid white;
-}
-
 .slideshow-container{
 margin-top:-125px;
-
-}
-
-
-.mySlides img {
-z-index:-1;
-position:absolute;
-width: 100%;
-height:auto;
 }
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  opacity:1.0;
+  background:white;
+  color:black;
 }
 
+.img1{
+	content:url("img/img1.png");
+	width:100%;
+	z-index:-1;
+	position:absolute;
+}
+
+.img2{
+	content:url("img/img2.png");
+	width:100%;
+	z-index:-1;
+	position:absolute;
+}
+
+.img3{
+	content:url("img/img3.png");
+	width:100%;
+	z-index:-1;
+	position:absolute;
+}
  /* ---------------------css contoh content ------------------------ */
-.contents{
+ 
+ 
+ .lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
   margin-top:700px;
-  height:500px;
+  margin-bottom:100px;
+}
+ 
+ .container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+}
+ 
+ 
+.lesson {
+  float: left;
+  width: 25%;
 }
 
-.section-title {
-  font-size:28px;
-  border-bottom:2px solid #dee7ec;
-  padding-bottom:15px;
-  margin-bottom:50px;
+.heading {
+  padding-bottom: 50px;
+  color: #5f5d60;
 }
 
-.contents-item p {
-  font-size:24px;
-  margin-top:30px;
-}
 
-.contents-item{
-  float:left;
- margin-right: 40px;
-}
   /*batas css content */
   
 /*------------------------------Mohamad Isyra R-----------------*/
