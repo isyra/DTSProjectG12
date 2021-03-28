@@ -1,19 +1,59 @@
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
-  .lesson {
+  
+  .HorizontalMenu li{
+  display:none;
+}
+  
+.Header{
+height:100px;  
+}
+  
+  .Header span {
+  display:inline-block;
+  padding:35px 30px;
+  font-size:30px;
+}
+ 
+.Header span:hover{
+cursor:pointer;
+}	
+ 
+  .newarrival img{
     width: 50%;
     margin-bottom: 50px;
   }
   
+  .newarrival-wrapper {
+  margin-top:500px;
+  }
   
 }
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
+   
+ .HorizontalMenu li{
+  display:none;
+}
+
+.AnnouncementBar p{
+font-size:10px;	
+}
+
+.Header{
+height:55px;  
+}
   
-  .lesson {
-    width: 100%;
-  }
+  .Header span {
+  display:inline-block;
+  padding:15px 10px;
+  font-size:25px;
+}
+
+.Header span:hover{
+cursor:pointer;
+}	
   
   .img1{
 	content:url("img/img1mobile.png");
@@ -36,5 +76,11 @@
 	position:absolute;
 } 
   
+  .newarrival img{
+    width: 100%;
+  }
   
+  .newarrival-wrapper {
+  margin-top:800px;
+  }
 }
