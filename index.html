@@ -7,7 +7,10 @@
     <title>DTS Project G12</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- Favicons -->
+	<link href="img/favicon/favicon-32x32.png" rel="icon">
+	<link href="img/favicon/apple-icon-60x60.png" rel="apple-touch-icon">
   </head>
   
   <!----------------- Body -------------->             
@@ -21,6 +24,9 @@
 	
 	<!------------------------------Header ------------------------------>
 	<div class="Header" id="myHeader">
+		<!--icon menu di HP-->
+		<span class="fa fa-bars menu-icon"></span>
+		<!--icon menu di HP-->
 		<div class="HorizontalMenu">
 			<ul>
 			<li a href="#">HOME</li>
@@ -84,56 +90,175 @@
 	  setTimeout(carousel, 3000); // Change image every  seconds
 	}
 	</script>
-
-	<!---------------------------------------------------------------------->
-	 <div class="lesson-wrapper">
+	
+	<!--
+		contoh product
+	 <div class="bestseller-wrapper">
       <div class="container">
         <div class="heading">
-          <h2>NEW ARRIVAL</h2>
+          <h2>BEST SELLER</h2>
         </div>
-        <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
+        <div class="bestsellers">
+          <div class="bestseller">
+            <div class="bestseller-icon">
               <img src="https://prog-8.com/images/html/advanced/html.png">
                <p>HTML & CSS</p>
             </div>
-             <p class="text-contents">Bahasa yang digunakan untuk membuat dan mendesain tampilan situs web Anda. </p>
+             <p class="text-contents">Best Seller 1</p>
           </div>
-          <div class="lesson">
-            <div class="lesson-icon">
+          <div class="bestseller">
+            <div class="bestseller-icon">
               <img src="https://prog-8.com/images/html/advanced/jQuery.png">
               <p>jQuery</p>
             </div>
-            <p class="text-contents">Library JavaScript yang cepat, kaya akan fitur, dan mudah digunakan yang menangani animasi dan permintaan Ajax.</p>
+            <p class="text-contents">Best Seller 2</p>
           </div>
-          <div class="lesson">
-            <div class="lesson-icon">
+          <div class="bestseller">
+            <div class="bestseller-icon">
               <img src="https://prog-8.com/images/html/advanced/ruby.png">
               <p>Ruby</p>
             </div>
-            <p class="text-contents">Bahasa dinamis, serba guna yang sederhana dan produktif. Ruby sering digunakan untuk membuat aplikasi web yang responsive.</p>
+            <p class="text-contents">Best Seller 3</p>
           </div>
-          <div class="lesson">
-            <div class="lesson-icon">
+          <div class="bestseller">
+            <div class="bestseller-icon">
               <img src="https://prog-8.com/images/html/advanced/php.png">
               <p>PHP</p>
             </div>
-            <p class="text-contents">Bahasa skrip open source yang dapat disematkan ke dalam HTML, dan cocok untuk pengembangan web.</p>
+            <p class="text-contents">Best Seller 4</p>
           </div>
           <div class="clear"></div>
         </div>
       </div>
-    </div>
+    </div> -->
 	<!----------------------------------------------------Mohamad Isyra R--------------------------------------------->
 	
-	<!--------------3 div class dibawah ini untuk produk------------------->
-	<div >
+	<!--------------2 div class dibawah ini untuk produk ------------------------------------------------------------>
+	<!---------------------------------------------Chintia Wulfa Anugra------------------------------------------------>
+	 <div class="newarrival-wrapper">
+      <div class="container-newarrival">
+        <div class="heading">
+          <h2>NEW ARRIVAL</h2>
+        </div>
+		<div class="newarrival">
+			<div class="slider1">                        
+								
+				<div class="slide1">
+					<img src="img/katalog1/img9.png">
+					
+				</div>
+			   
+				<div class="slide1">
+					<img src="img/katalog1/img9b.png">
+				</div>	
+
+				<script>
+					var myIndex2 = 0;
+					carousel2();
+				
+					function carousel2() {
+					  var det;
+					  var gam = document.getElementsByClassName("slide1");
+					  for (det = 0; det < gam.length; det++) {
+						gam[det].style.display = "none";  
+					  }
+					  myIndex2++;
+					  if (myIndex2 > gam.length) {myIndex2 = 1}    
+					  gam[myIndex2-1].style.display = "block";  
+					  setTimeout(carousel2, 2000); // Change image every  seconds
+					}
+				</script> 
+					
+			</div>
+			
+			
+			<div class="slider2">  		
+			
+				<div class="slide2">
+					<img src="img/katalog1/img8.png">
+				</div>
+				<div class="slide2">
+					<img src="img/katalog1/img8a.png">
+				</div>
+			
+				<script>
+				var myIndex3 = 0;
+				carousel3();
+			
+				function carousel3() {
+				  var i3;
+				  var x3 = document.getElementsByClassName("slide2");
+				  for (i3 = 0; i3 < x3.length; i3++) {
+					x3[i3].style.display = "none";  
+				  }
+				  myIndex3++;
+				  if (myIndex3 > x3.length) {myIndex3 = 1}    
+				  x3[myIndex3-1].style.display = "block";  
+				  setTimeout(carousel3, 2500); // Change image every  seconds
+				}
+				</script>
+			</div>	
+		
+			<div class="slider3">                       
+				
+				<div class="slide3">
+					<img src="img/katalog1/img6.png">
+				</div>
+				<div class="slide3">
+					<img src="img/katalog1/img6a.png">
+				</div>
+			
+				<script>
+					var myIndex4 = 0;
+					carousel4();
+
+					function carousel4() {
+					var i4;
+					var x4 = document.getElementsByClassName("slide3");
+					for (i4 = 0; i4 < x4.length; i4++) {
+						x4[i4].style.display = "none";  
+					}
+					myIndex4++;
+					if (myIndex4 > x4.length) {myIndex4 = 1}    
+					x4[myIndex4-1].style.display = "block";  
+					setTimeout(carousel4, 3000); // Change image every  seconds
+					}
+				</script>
+			</div>
+
+			<div class="slider4">                       
+				
+				<div class="slide4">
+					<img src="img/katalog1/img5.png">
+				</div>
+				<div class="slide4">
+					<img src="img/katalog1/img5a.png">
+				</div>
+			
+				<script>
+					var myIndex5 = 0;
+					carousel5();
+
+					function carousel5() {
+					var i5;
+					var x5 = document.getElementsByClassName("slide4");
+					for (i5 = 0; i5 < x5.length; i5++) {
+						x5[i5].style.display = "none";  
+					}
+					myIndex5++;
+					if (myIndex5 > x5.length) {myIndex5 = 1}    
+					x5[myIndex5-1].style.display = "block";  
+					setTimeout(carousel5, 3500); // Change image every  seconds
+					}
+				</script>
+			</div>	
+		</div>
+		</div> 	
+			<button class="btn first">VIEW ALL PRODUCTS</button>                   
+	  </div>  
 	
-	</div>
 	
-	<div >
-	
-	</div>
+	<!----------------------------------------------------Chintia Wulfa Anugra---------------------------------------------->
 	
 	<div >
 	
