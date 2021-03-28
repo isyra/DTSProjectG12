@@ -21,11 +21,10 @@ body {
 
 /*------------------------------Mohamad Isyra R-----------------*/
 
+/*---------------------------announcement bar-----------------*/
 .AnnouncementBar{
 	background:#bf9578;
-	height : 50px;
-	
-	
+	height : 50px;	
 }
 
 .AnnouncementBar p{
@@ -36,6 +35,7 @@ color:#f8f0f0;
 letter-spacing:2px;
 }
 
+/*-----------------------------------header menu----------------*/
 .Header{
 height:125px;
 background:transparent;
@@ -63,8 +63,8 @@ transition: all 0.5s;
 cursor: pointer;
 }
 
-.slideshow-container{
-margin-top:-125px;
+.Header span {
+  display:none;
 }
 
 .sticky {
@@ -73,6 +73,11 @@ margin-top:-125px;
   width: 100%;
   background:white;
   color:black;
+}
+
+/*------------------------------------------slideshow-container----------*/
+.slideshow-container{
+margin-top:-125px;
 }
 
 .img1{
@@ -95,10 +100,11 @@ margin-top:-125px;
 	z-index:-1;
 	position:absolute;
 }
- /* ---------------------css contoh content ------------------------ */
  
  
- .lesson-wrapper {
+ /* ---------------------Product Best Seller------------------------ */
+  /*
+ .bestseller-wrapper {
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
@@ -114,8 +120,7 @@ margin-top:-125px;
 
 }
  
- 
-.lesson {
+.bestseller {
   float: left;
   width: 25%;
 }
@@ -124,8 +129,120 @@ margin-top:-125px;
   padding-bottom: 50px;
   color: #5f5d60;
 }
+  */
+/*--------------------------------------Mohamad Isyra R-----------------*/
 
+/*---------------------------------------------Chintia Wulfa Anugra------------------------------------------------*/
+ .newarrival-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  margin-top:700px;
+  margin-bottom:100px;
+}
+ 
+ .container-newarrival {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 
-  /*batas css content */
+}
+ 
+.newarrival img{
+  float: left;
+  width: 25%;
+}
+
+.heading {
+  padding-bottom: 50px;
+  color: #5f5d60;
+  letter-spacing: 2px;
+}
+/*.slide1 {
+  float:left;
+  width: 25%; 
+  display: block;  */
   
-/*------------------------------Mohamad Isyra R-----------------*/
+}
+.slide1 img:hover{
+  cursor: pointer;
+  transition: all 0.5s;
+}
+/*.slide1 img {
+  width: 290px;*/
+}
+/*.slide2 {
+  float: left;
+  width: 25%;    
+  display: block;
+ padding: 0px 150px;
+}*/
+
+/*.slide2 img {
+  width: 290px;*/
+}
+.slide2 img:hover{
+  cursor: pointer;
+  transition: all 0.5s;
+  
+}
+
+/*.slide3 {
+  float:left;
+  width: 25%;    
+  display: block;
+  padding: 0px 250px;*/
+  
+}
+.slide3 img:hover{
+  cursor: pointer;
+  transition: all 0.5s;
+  
+}
+/*.slide3 img {
+  width: 290px;*/
+}
+
+.slide4 img:hover{
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn {
+ box-sizing:content-box;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+background-color: transparent;
+border: 1px solid #D2B48C;
+border-radius: 0.6em;
+color: #D2B48C;
+cursor: pointer;
+font-family: "Century Gothic", sans-serif;
+align-self: center;
+font-size: 1rem;
+font-weight: 200;
+line-height: 1;
+margin: 20px;
+padding: 1.2em 2.8em;
+text-decoration: none;
+text-align: center;
+text-transform: uppercase;
+font-family: 'Montserrat', sans-serif;
+font-weight: 200;
+letter-spacing:2px;
+}
+.btn:hover, .btn:focus {
+color: #fff;
+outline: 0;
+}
+
+.first {
+transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover {
+box-shadow: 0 0 40px 40px #e4bab5 inset;
+}
+
+/*---------------------------------------------Chintia Wulfa Anugra------------------------------------------------*/
