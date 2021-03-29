@@ -27,7 +27,34 @@ cursor:pointer;
   .newarrival-wrapper {
   margin-top:500px;
   }
+    
+.footer-content{
+flex-wrap:wrap;
+flex:1 1; 
+}	
+
+.footer-content .content-about,
+.footer-content .content-social
+{
+	width: 50%;
+	padding:0px 40px;
+	margin-bottom: 50px;
+}
+
+.footer-content .content-pesan{
+	width: 100%;
+	padding:0px 40px;
+	margin-bottom: 50px;
+}
   
+.footer-content .content-pesan .email{
+	width: 50%;
+
+}
+.footer-content .content-pesan .isi{
+	width: 50%;
+	height: 80px;
+}	
 }
 
 /* Untuk Smartphone */
@@ -83,4 +110,28 @@ cursor:pointer;
   .newarrival-wrapper {
   margin-top:800px;
   }
+.footer-content{
+  flex-wrap:wrap;
+  
+  }
+  
+ 
+.footer-content .content-about,
+.footer-content .content-social,
+.footer-content .content-pesan{
+	width: 100%;
+	padding:0px 40px;
+	margin-bottom: 50px;
+}
+
+.footer-content .content-pesan .email{
+	width: 70%;
+
+}
+.footer-content .content-pesan .isi{
+	width: 70%;
+	height: 80px;
+}	
+
+	
 }
