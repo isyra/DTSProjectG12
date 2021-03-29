@@ -246,3 +246,85 @@ box-shadow: 0 0 40px 40px #e4bab5 inset;
 }
 
 /*---------------------------------------------Chintia Wulfa Anugra------------------------------------------------*/
+
+
+.footer-content{
+display:flex;
+flex:1 1;
+background: #bf9578;
+padding-top:15px;
+}	
+
+.footer-content .content-about,
+.footer-content .content-social,
+.footer-content .content-pesan{
+	width: 33%;
+	padding:0px 40px;
+	margin-bottom: 20px;
+}
+
+.footer-bottom{
+	height: 40px;
+	color: #adadad;
+	background:black;
+	text-align: center;
+	padding: 10px;
+}
+
+.footer-content h2{
+	font-family: sans-serif;
+	color: #ffffff;
+	text-align: left;
+	font-size: 30px;
+	line-height: 50px;
+	letter-spacing:2px;
+	
+}
+
+.footer-content p{
+	font-style: "Century Gothic", sans-serif;
+	color: white;
+	text-align: left;
+	letter-spacing:1px;
+	line-height: 20px;
+}
+
+.footer-content .content-social li a{
+	
+	text-decoration: none;
+	color: white;
+	font-style: sans-serif;
+	letter-spacing:2px;
+	line-height: 40px;
+}
+
+.content-social .fa{
+font-size:40px;
+}
+
+.footer-content .content-pesan .email{
+	width: 90%;
+
+}
+.footer-content .content-pesan .isi{
+	width: 90%;
+	height: 80px;
+}
+.footer-content .content-pesan .btn{
+	padding: 5px;
+}
+.footer-content .content-pesan .btn:hover{
+	background: lightblue;
+	color: black;
+	cursor: pointer;
+}
+.footer-content .content-social li a:hover{
+	margin-left: 10px;
+	color: orange;
+
+}
+
+.footer-content .content-pesan input{
+	display: block;
+	
+}
