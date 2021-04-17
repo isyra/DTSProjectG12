@@ -4,13 +4,17 @@
 
 html,
 ul, ol, li,
-h1, h2, h3, h4, h5, h6, p, div {
+h1, h2, h3, h4, h5, h6, p, div, a {
   margin: 0;
   padding: 0;
 }
 
 li {
   list-style: none;
+}
+
+a {
+	text-decoration: none;
 }
 
 body {
@@ -41,26 +45,50 @@ height:125px;
 background:transparent;
 transition: all 0.5s;
 border-bottom:0.1px solid #dee7ec;
-color:white;
+color:rgba(255, 255, 255, 0.3);
 }
 
 .Header:hover{
 transition: all 0.5s;
 background:white;
-color:black;
+color:rgba(0, 0, 0, 0.8);
 }
 
-.HorizontalMenu li{
+.HorizontalMenu li {
 display:inline-block;
 padding:20px 20px;
-opacity:0.8;
 letter-spacing:2px;
 }
 
-.HorizontalMenu li:hover{
+/*.HorizontalMenu li:hover{
 border-bottom:0.5px solid #111;
 transition: all 0.5s;
 cursor: pointer;
+}*/
+
+.HorizontalMenu li::after{
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: black;
+  transition: all 0.3s linear;
+  margin-top: 20px;
+}
+
+.HorizontalMenu li:hover::after{
+	width:100%;
+}
+
+
+.HorizontalMenu a {
+color: inherit;
+}
+
+.HorizontalMenu a:hover{
+
+color: inherit;
 }
 
 .Header span {
@@ -75,9 +103,21 @@ cursor: pointer;
   color:black;
 }
 
+.sidepanel a {
+  display: none;
+}
+
+
+
+
 /*------------------------------------------slideshow-container----------*/
 .slideshow-container{
 margin-top:-125px;
+}
+
+
+.mySlides{
+	transition: all 5s;
 }
 
 .img1{
@@ -117,22 +157,20 @@ margin-top:-125px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-
 }
  
 .bestseller {
   float: left;
   width: 25%;
 }
-
 .heading {
   padding-bottom: 50px;
   color: #5f5d60;
 }
   */
-/*--------------------------------------Mohamad Isyra R-----------------*/
+/*-------------------------------------------------------*/
 
-/*---------------------------------------------Chintia Wulfa Anugra------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
  .newarrival-wrapper {
   padding-bottom: 80px;
   padding-left: 5%;
@@ -245,13 +283,13 @@ transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 box-shadow: 0 0 40px 40px #e4bab5 inset;
 }
 
-/*---------------------------------------------Chintia Wulfa Anugra------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
 
 
 .footer-content{
 display:flex;
 flex:1 1;
-background: #bf9578;
+border-top:0.1px solid #dee7ec;
 padding-top:15px;
 }	
 
@@ -272,8 +310,8 @@ padding-top:15px;
 }
 
 .footer-content h2{
-	font-family: sans-serif;
-	color: #ffffff;
+	font-family: "Open Sans", sans-serif;
+	color: black;
 	text-align: left;
 	font-size: 30px;
 	line-height: 50px;
@@ -282,18 +320,18 @@ padding-top:15px;
 }
 
 .footer-content p{
-	font-style: "Century Gothic", sans-serif;
-	color: white;
+	font-style: Merriweather, serif;
+	color: black;
 	text-align: left;
 	letter-spacing:1px;
-	line-height: 20px;
+	line-height: 25px;
 }
 
 .footer-content .content-social li a{
 	
 	text-decoration: none;
-	color: white;
-	font-style: sans-serif;
+	color: black;
+	font-style: Merriweather, serif;
 	letter-spacing:2px;
 	line-height: 40px;
 }
@@ -304,14 +342,17 @@ font-size:40px;
 
 .footer-content .content-pesan .email{
 	width: 90%;
-
+	
 }
 .footer-content .content-pesan .isi{
 	width: 90%;
 	height: 80px;
+	margin-top:10px;
+	
 }
 .footer-content .content-pesan .btn{
-	padding: 5px;
+	padding: 5px 10px;
+	margin:20px 0px;
 }
 .footer-content .content-pesan .btn:hover{
 	background: lightblue;
