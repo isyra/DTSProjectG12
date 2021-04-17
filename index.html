@@ -25,17 +25,43 @@
 	<!------------------------------Header ------------------------------>
 	<div class="Header" id="myHeader">
 		<!--icon menu di HP-->
-		<span class="fa fa-bars menu-icon"></span>
+		<span class="openbtn" onclick="openNav()">☰</span>
 		<!--icon menu di HP-->
 		<div class="HorizontalMenu">
 			<ul>
-			<li a href="#">HOME</li>
-			<li a href="#">NEW ARRIVAL</li>
-			<li a href="#">DRESS</li>
-			<li a href="#">ATASAN</li>
+			<li> <a href="#">HOME</a> </li> 
+			<li> <a href="#n1">NEW ARRIVAL</a> </li>
+			<li> <a href="#">DRESS</a></li>
+			<li> <a href="#">ATASAN</a></li>
 			</ul>
 		</div>
+		<div id="mySidepanel" class="sidepanel">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+		  <ul>
+			<li> <a href="#">HOME</a> </li> 
+			<li> <a href="#n1">NEW ARRIVAL</a> </li>
+			<li> <a href="#">DRESS</a></li>
+			<li> <a href="#">ATASAN</a></li>
+		  </ul>
+		</div>
+		
+		
 	</div>
+	
+	<script>
+		function openNav() {
+		  document.getElementById("mySidepanel").style.width = "240px";
+		}
+
+		function closeNav() {
+		  document.getElementById("mySidepanel").style.width = "0";
+		}
+	</script>
+	<!--------------------------------------------------------------------------->
+	
+	
+	
+	
 	<!-------------------------script header sticky ketika offsetTop--------------------------------------------->
 	<script>
 		window.onscroll = function() {myFunction()};
@@ -131,14 +157,14 @@
         </div>
       </div>
     </div> -->
-	<!----------------------------------------------------Mohamad Isyra R--------------------------------------------->
+	
 	
 	<!--------------2 div class dibawah ini untuk produk ------------------------------------------------------------>
-	<!---------------------------------------------Chintia Wulfa Anugra------------------------------------------------>
+	
 	 <div class="newarrival-wrapper">
       <div class="container-newarrival">
         <div class="heading">
-          <h2>NEW ARRIVAL</h2>
+          <h2 id="n1">NEW ARRIVAL</h2>
         </div>
 		<div class="newarrival">
 			<div class="slider1">                        
@@ -258,7 +284,7 @@
 	  </div>  
 	
 	
-	<!----------------------------------------------------Chintia Wulfa Anugra---------------------------------------------->
+	
 	
 	<div >
 	
@@ -287,7 +313,7 @@
 				<form action="#">
 					<input class="email" type="text" placeholder="Email" required="masukan email">
 					<input class="isi" type="text" placeholder="Ketik Pesan">
-					<input class="btn" type="button" value="Send">
+					<input class="btn" type="button" value="Subscribe">
 				</form>
 			</div>
 		</div>
